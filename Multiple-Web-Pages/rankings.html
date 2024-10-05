@@ -1,0 +1,1215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>webpasge</title>
+        <meta charset="utf-8">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: black;
+            overflow-x: hidden;
+        }
+        .bg-color-danger{
+            color:aqua;
+        }
+        .img{
+          height: 100%;
+        }
+        .bg-color-danger:hover{
+            font-family: 'Times New Roman', Times, serif;
+            color:bisque; 
+        }
+        /*.nickname{
+          font-size: 20px;
+          font-family: Agency FB;
+          font-weight: lighter;
+        }*/
+        .div1{
+            margin: 30px;
+        }
+        .gtp{
+            text-align: end;
+            margin-right: 32px;
+            margin-bottom: 25px;
+        }
+        * {
+        box-sizing: border-box;
+        }
+
+        .row {
+        margin-left:-5px;
+        margin-right:-5px;
+        }
+        
+        .column {
+        float: left;
+        width: 24%;
+        padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        }
+
+        .tab-head{
+            text-align: left;
+            font-family: Agency FB;
+            font-weight: bold;
+            font-size: 24px;
+            color: white;
+        }
+
+        .tab-head-r{
+            text-align: left;
+            font-family: Agency FB;
+            font-weight: bold;
+            font-size: 20px;
+            color: red;
+        }
+
+        .tab-head-top{
+            text-align: left;
+            font-family: Agency FB;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        .tab1-head{
+            text-align: center;
+            font-family: Agency FB;
+            font-weight: bold;
+            font-size: 38px;
+            color: aqua;
+            margin: 20px;
+        }
+
+        .r1{
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .num{
+            font-family: Agency FB;
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: 40px;
+        }
+        .img-align{
+            float: right;
+            margin-bottom: 3px;
+            transition: transform .2s;
+        }
+        .img-align:hover{
+            transform: scale(1.03);
+        }
+        .champ{
+            text-align: left;
+            font-family: Agency FB;
+            font-size: 13px;
+            color: #D3D3D3;
+            font-weight: bolder;            
+        }
+    </style>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+        <!--<h1 class="bg-color-danger">Top Ranked</h1>-->
+        <div class="row">
+            <h1 class="tab1-head" id="to-the-topz">Fan-made Rankings</h1>
+            <div class="col-sm-12 col-lg-6 pt-3">
+                <img class="img-fluid" src="https://content.api.news/v3/images/bin/ff8cc019cc74efe9bd4ef32c0d3e7eff">
+            </div>
+            <div class="col-sm-12 col-lg-6 pt-3">
+                <table class="table table-bordered table-striped table-light table-hover table-responsive">
+                    <thead>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Nick Name</th>
+                    </thead>
+                    <tr>
+                        <td><span class="num">1</span></td>
+                        <td>Coner McGregor</td>
+                        <td class="nickname">The B055</td>
+                    </tr>
+                    <tr>
+                        <td><span class="num">2</span></td>
+                        <td>Kabib Nurmagomedov</td>
+                        <td class="nickname">Clam but Violent</td>
+                    </tr>
+                    <tr>
+                        <td><span class="num">3</span></td>
+                        <td>Tony Ferguson</td>
+                        <td class="nickname">The Chill Guy</td>
+                    </tr>
+                    <tr>
+                        <td><span class="num">4</span></td>
+                        <td>Floyd Mayweather</td>
+                        <td class="nickname">The Bussiness Man</td>
+                    </tr>
+                    <tr>
+                        <td><span class="num">5</span></td>
+                        <td>Jon Jones</td>
+                        <td class="nickname">The Drunken Master</td>
+                    <tr>
+                    <tr>
+                        <td><span class="num">6</span></td>
+                        <td>Daniel Cornier</td>
+                        <td class="nickname">Underrated</td>
+                    <tr>
+                    <tr>
+                        <td><span class="num">7</span></td>
+                        <td>George St. Perrie</td>
+                        <td class="nickname">GSP</td>
+                    <tr>
+                    <tr>
+                        <td><span class="num">8</span></td>
+                        <td>Andreson Silva</td>
+                        <td class="nickname">The Spider</td>
+                    <tr>
+                </table>
+            </div>    
+        </div>            
+    </div>
+    <div class="row r1">
+        <h1 class="tab1-head">Division-wise Rankings</h1>
+
+        <!-- Row1 (Men's Pound for Pound Top Rank, FlyWeight, Bantaman Weight, Featherweight) -->
+
+        <div class="column col-sm-12 col-6"> 
+          <h1 class="tab-head-r" id="alex-vol">Men's Pound for Pound <span class="tab-head-top">Top</span> Rank</h1>
+          <h3 class="tab-head">ALEXANDER</h3>
+          <h3 class="tab-head">VOLKANOVSKI</h3>
+          <h6 class="champ"># T O P 1</h6>
+          <img src="../TableImages\alex vol.png" class="img-align" height="180px" width="260px"/>
+          <table class="table table-bordered table-striped table-light table-hover table-responsive">
+            <tr>
+              <td><span class="num">1</span>Alexander Volkanovski</td>
+              <!--<td>Smith</td>
+              <td>50</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">2</span>Jon Jones</td>
+                <!--<td>Smith</td>
+                <td>50</td>-->
+              </tr>
+            <tr>
+              <td><span class="num">3</span>Islam Makhachev</td>
+              <!--<td>Jackson</td>
+              <td>94</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">4</span>Leon Edwards</td>
+              <!--<td>Johnson</td>
+              <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">5</span>Israel Adesanya</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">6</span>Aljamain Sterling</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">7</span>Charles Oliveira</td>
+              <!--<td>Jackson</td>
+              <td>94</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">8</span>Kamaru Usman</td>
+              <!--<td>Johnson</td>
+              <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">9</span>Alexandre Pantoja</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">10</span>Jiri Prochazka</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">11</span>Alex Pereira</td>
+              <!--<td>Smith</td>
+              <td>50</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">12</span>Max Holloway</td>
+              <!--<td>Jackson</td>
+              <td>94</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">13</span>Dustin Poirier</td>
+              <!--<td>Johnson</td>
+              <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">14</span>Jamahal Hill</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">15</span>Brandon Moreno</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+          </table>
+        </div>
+        <div class="column col-sm-12 col-6">
+          <h1 class="tab-head-top"><span class="tab-head-r">Fly</span> Weight</h1>
+          <h3 class="tab-head mt-2">ALEXANDRE</h3>
+          <h3 class="tab-head">PANTOJA</h3>
+          <h6 class="champ">C H A M P I O N</h6>
+          <img src="../TableImages\alex pant.png" class="img-align" height="180px" width="260px"/>   
+          <table class="table table-bordered table-striped table-light table-hover table-responsive">
+            <tr>
+              <td><span class="num">1</span>Brandon Moreno</td>
+              <!--<td>Smith</td>
+              <td>50</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">2</span>Deiveson Figueiredo</td>
+                <!--<td>Smith</td>
+                <td>50</td>-->
+              </tr>
+            <tr>
+              <td><span class="num">3</span>Amir Albazi</td>
+              <!--<td>Jackson</td>
+              <td>94</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">4</span>Brandon Royval</td>
+              <!--<td>Johnson</td>
+              <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">5</span>Kai Kara-France</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">6</span>Matheus Nicolau</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">7</span>Alex Perez</td>
+              <!--<td>Jackson</td>
+              <td>94</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">8</span>Matt Schnell</td>
+              <!--<td>Johnson</td>
+              <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">9</span>Manel Kape</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">10</span>Tim Elliott</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">11</span>Muhammed Mokaaev</td>
+              <!--<td>Smith</td>
+              <td>50</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">12</span>Sumudaerji</td>
+              <!--<td>Jackson</td>
+              <td>94</td>-->
+            </tr>
+            <tr>
+              <td><span class="num">13</span>Tagir Ulanbekov</td>
+              <!--<td>Johnson</td>
+              <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">14</span>Steve Erceg</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+            <tr>
+                <td><span class="num">15</span>David Dvorak</td>
+                <!--<td>Johnson</td>
+                <td>67</td>-->
+            </tr>
+          </table>
+        </div>
+        <div class="column col-sm-12 col-6">
+            <h1 class="tab-head-top"><span class="tab-head-r">Bantaman</span> Weight</h1>
+            <h3 class="tab-head mt-2">ALJAMAIN</h3>
+            <h3 class="tab-head">STERLING</h3>
+            <h6 class="champ">C H A M P I O N</h6>
+            <img src="../TableImages\alja ster.png" class="img-align" height="180px" width="260px"/>    
+            <table class="table table-bordered table-striped table-light table-hover table-responsive">
+                <tr>
+                  <td><span class="num">1</span>Merab Dvalishvili</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">2</span>Sean O'Malley</td>
+                    <!--<td>Smith</td>
+                    <td>50</td>-->
+                  </tr>
+                <tr>
+                  <td><span class="num">3</span>Henry Cejudo</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">4</span>Cory Sandhagen</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">5</span>Petr Yan</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">6</span>Marlon Vera</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">7</span>Rob Font</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">8</span>Vadong Song</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">9</span>Dominick Cruz</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">10</span>Pedro Munhoz</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">11</span>Umar Nurmagomedov</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">12</span>Ricky Simon</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">13</span>Adrian Yanez</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">14</span>Chris Gutierrez</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">15</span>Jonathan Martinez</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+              </table>
+          </div>
+          <div class="column col-sm-12 col-6">
+            <h1 class="tab-head-top"><span class="tab-head-r">Feather</span> Weight</h1>
+            <h3 class="tab-head">ALEXANDER</h3>
+            <h3 class="tab-head">VOLKANOVSKI</h3>
+            <h6 class="champ">C H A M P I O N</h6>
+            <img src="../TableImages\alex vol.png" class="img-align" height="180px" width="260px"/>  
+            <table class="table table-bordered table-striped table-light table-hover table-responsive">
+                <tr>
+                  <td><span class="num">1</span>Max Holloway</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">2</span>Yair Rodriguez</td>
+                    <!--<td>Smith</td>
+                    <td>50</td>-->
+                  </tr>
+                <tr>
+                  <td><span class="num">3</span>Brian Ortega</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">4</span>Arnold Allen</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">5</span>Ilia Topuria</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">6</span>Josh Emmett</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">7</span>Calvin Kattar</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">8</span>Chan Sung Jung</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">9</span>Giga Chikadze</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">10</span>Movsar Evloev</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">11</span>Sodiq Yusuff</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">12</span>Bryce Mitchell</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">13</span>Dan Ige</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">14</span>Edson Barboza</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">15</span>Alex Caceres</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+              </table>
+          </div>
+    </div>
+
+    <!-- Row2 (LightWeight, WelterWeight, MiddleWeight, Light HeavyWeight) -->
+    <div class="row r1">
+        <div class="column col-sm-12 col-6">
+            <h1 class="tab-head-top"><span class="tab-head-r">Light</span> Weight</h1>
+            <h3 class="tab-head">ISLAM</h3>
+            <h3 class="tab-head">MAKHACHEV</h3>
+            <h6 class="champ">C H A M P I O N</h6>
+            <img src="../TableImages\islam mak.png" class="img-align" height="180px" width="260px"/>    
+            <table class="table table-bordered table-striped table-light table-hover table-responsive">
+                <tr>
+                  <td><span class="num">1</span>Charles Oliveira</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">2</span>Dustin Poirier</td>
+                    <!--<td>Smith</td>
+                    <td>50</td>-->
+                  </tr>
+                <tr>
+                  <td><span class="num">3</span>Justin Gaethje</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">4</span>Beneil Dariush</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">5</span>Michael Chandler</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">6</span>Rafael Fiziev</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">7</span>Mateusz Gamrot</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">8</span>Arman Tsarukyan</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">9</span>Dos Anjos</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">10</span>Dan Hooker</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">11</span>Grant Dawson</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">12</span>Jalin Turner</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">13</span>Renato Moicano</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">14</span>Damir Ismagulov</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">15</span>Matt Frevola</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+              </table>
+          </div>
+          <div class="column col-sm-12 col-6">
+            <h1 class="tab-head-top"><span class="tab-head-r">Welter</span> Weight</h1>
+            <h3 class="tab-head">LEON</h3>
+            <h3 class="tab-head">EDWARDS</h3>
+            <h6 class="champ">C H A M P I O N</h6>
+            <img src="../TableImages\leon edw.png" class="img-align" height="180px" width="260px"/>  
+            <table class="table table-bordered table-striped table-light table-hover table-responsive">
+                <tr>
+                  <td><span class="num">1</span>Kamaru Usman</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">2</span>Colby Covington</td>
+                    <!--<td>Smith</td>
+                    <td>50</td>-->
+                  </tr>
+                <tr>
+                  <td><span class="num">3</span>Belal Muhammad</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">4</span>Khamzat Chimaev</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">5</span>Gilbert Burns</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">6</span>Shavkat Rakhmonov</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">7</span>Stephen Thompson</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">8</span>Geoff Neal</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">9</span>Sean Brady</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">10</span>Vicente Luque</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">11</span>Neil Magny</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">12</span>Michael Chiesa</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">13</span>Jack Della Maddalena</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">14</span>Ian Machado Garry</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">15</span>Michel Pereira</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+              </table>
+          </div>
+          <div class="column col-sm-12 col-6">
+            <h1 class="tab-head-top"><span class="tab-head-r">Middle</span> Weight</h1>
+            <h3 class="tab-head">ISRAEL</h3>
+            <h3 class="tab-head">ADESANYA</h3>
+            <h6 class="champ">C H A M P I O N</h6>
+            <img src="../TableImages\isreal ades.png" class="img-align" height="180px" width="260px"/>    
+            <table class="table table-bordered table-striped table-light table-hover table-responsive">
+                <tr>
+                  <td><span class="num">1</span>Dricus Du Plessis</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">2</span>Alex Pereira</td>
+                    <!--<td>Smith</td>
+                    <td>50</td>-->
+                  </tr>
+                <tr>
+                  <td><span class="num">3</span>Robert Whittaker</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">4</span>Jared Cannonier</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">5</span>Marvin Vettori</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">6</span>Sean Strickland</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">7</span>Paulo Costa</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">8</span>Derek Brunson</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">9</span>Roman Dolidze</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">10</span>Jack Hermansson</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">11</span>Brendan Allen</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">12</span>Kelvin Gastelum</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">13</span>Nassourdineimavov</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">14</span>Andre Muniz</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">15</span>Chris Curtis</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+              </table>
+          </div>
+          <div class="column col-sm-12 col-4">
+            <h1 class="tab-head-top"><span class="tab-head-r">Light Heavy</span> Weight</h1>
+            <h3 class="tab-head">JAMAHALL</h3>
+            <h3 class="tab-head">HILL</h3>
+            <h6 class="champ">C H A M P I O N</h6>
+            <img src="../TableImages\jam hill.png" class="img-align" height="180px" width="260px"/>  
+            <table class="table table-bordered table-striped table-light table-hover table-responsive">
+                <tr>
+                  <td><span class="num">1</span>Jiri Prochazka</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">2</span>Magomed Ankalaev</td>
+                    <!--<td>Smith</td>
+                    <td>50</td>-->
+                  </tr>
+                <tr>
+                  <td><span class="num">3</span>Jan Blachowicz</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">4</span>Aleksandar Rakic</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">5</span>Nikita Krylov</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">6</span>Johnny Walker</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">7</span>Anthony Smith</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">8</span>Volkan Oezdemir</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">9</span>Paul Craig</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">10</span>Ryan Spann</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">11</span>Azamat Murzakanov</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">12</span>Dominick Reyes</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">13</span>Khalil Rountree Jr.</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">14</span>Alonzo Menifield</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">15</span>Dustin Jacoby</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+              </table>
+          </div>
+    </div>
+
+    <!-- Row3 (HeavyWeight, Women's Pound for Pound Top Rank, Straw Weight, FeatherWeight) -->
+    <div class="row r1">
+        <div class="column col-sm-12 col-4">
+            <h1 class="tab-head-top"><span class="tab-head-r">Heavy</span> Weight</h1>
+            <h3 class="tab-head">JON</h3>
+            <h3 class="tab-head">JONES</h3>
+            <h6 class="champ">C H A M P I O N</h6>
+            <img src="../TableImages\jon jones.png" class="img-align" height="180px" width="260px"/>  
+            <table class="table table-bordered table-striped table-light table-hover table-responsive">
+                <tr>
+                  <td><span class="num">1</span>Sergei Pavlovich</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">2</span>Ciryl Gane</td>
+                    <!--<td>Smith</td>
+                    <td>50</td>-->
+                  </tr>
+                <tr>
+                  <td><span class="num">3</span>Stipe Miocic</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">4</span>Curtis Blaydes</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">5</span>Tom Aspinall</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">6</span>Tai Tuivasa</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">7</span>Alexander Volkov</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">8</span>Sergey Spivak</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">9</span>Jailton Almedia</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">10</span>Marcin Tybura</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">11</span>Derrick Lewis</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">12</span>Jairzinho Rozenstruik</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">13</span>Alexandr Romanov</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">14</span>Chris Daukaus</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">15</span>Blagoy Ivanov</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+              </table>
+          </div>
+          <div class="column col-sm-12 col-4">
+            <h1 class="tab-head-r">Women's Pound for Pound <span class="tab-head-top">Top</span> Rank</h1>
+            <h3 class="tab-head">ALEXA</h3>
+            <h3 class="tab-head">GRASSO</h3>
+            <h6 class="champ"># T O P 1</h6>
+            <img src="../TableImages\alexa gras.png" class="img-align" height="180px" width="260px"/>  
+            <table class="table table-bordered table-striped table-light table-hover table-responsive">
+                <tr>
+                  <td><span class="num">1</span>Alexander Volkanovski</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">2</span>Jon Jones</td>
+                    <!--<td>Smith</td>
+                    <td>50</td>-->
+                  </tr>
+                <tr>
+                  <td><span class="num">3</span>Islam Makhachev</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">4</span>Leon Edwards</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">5</span>Israel Adesanya</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">6</span>Aljamain Sterling</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">7</span>Charles Oliveira</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">8</span>Kamaru Usman</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">9</span>Alexandre Pantoja</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">10</span>Jiri Prochazka</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">11</span>Alex Pereira</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">12</span>Max Holloway</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">13</span>Dustin Poirier</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">14</span>Jamahal Hill</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">15</span>Brandon Moreno</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+              </table>
+          </div>
+          <div class="column col-sm-12 col-4">
+            <h1 class="tab-head-r">Women's <span class="tab-head-top">Straw</span> Weight</h1>
+            <h3 class="tab-head">ZHANG</h3>
+            <h3 class="tab-head">WEILI</h3>
+            <h6 class="champ">C H A M P I O N</h6>
+            <img src="../TableImages\zhang wei.png" class="img-align" height="180px" width="260px"/>  
+            <table class="table table-bordered table-striped table-light table-hover table-responsive">
+                <tr>
+                  <td><span class="num">1</span>Alexander Volkanovski</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">2</span>Jon Jones</td>
+                    <!--<td>Smith</td>
+                    <td>50</td>-->
+                  </tr>
+                <tr>
+                  <td><span class="num">3</span>Islam Makhachev</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">4</span>Leon Edwards</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">5</span>Israel Adesanya</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">6</span>Aljamain Sterling</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">7</span>Charles Oliveira</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">8</span>Kamaru Usman</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">9</span>Alexandre Pantoja</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">10</span>Jiri Prochazka</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">11</span>Alex Pereira</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">12</span>Max Holloway</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">13</span>Dustin Poirier</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">14</span>Jamahal Hill</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">15</span>Brandon Moreno</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+              </table>
+          </div>
+          <div class="column col-sm-12 col-4">
+            <h1 class="tab-head-r">Women's <span class="tab-head-top">Fly</span> Weight</h1>
+            <h3 class="tab-head">ALEXA</h3>
+            <h3 class="tab-head">GRASSO</h3>
+            <h6 class="champ">C H A M P I O N</h6>
+            <img src="../TableImages\alexa gras.png" class="img-align" height="180px" width="260px"/>  
+            <table class="table table-bordered table-striped table-light table-hover table-responsive">
+                <tr>
+                  <td><span class="num">1</span>Alexander Volkanovski</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">2</span>Jon Jones</td>
+                    <!--<td>Smith</td>
+                    <td>50</td>-->
+                  </tr>
+                <tr>
+                  <td><span class="num">3</span>Islam Makhachev</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">4</span>Leon Edwards</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">5</span>Israel Adesanya</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">6</span>Aljamain Sterling</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">7</span>Charles Oliveira</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">8</span>Kamaru Usman</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">9</span>Alexandre Pantoja</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">10</span>Jiri Prochazka</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">11</span>Alex Pereira</td>
+                  <!--<td>Smith</td>
+                  <td>50</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">12</span>Max Holloway</td>
+                  <!--<td>Jackson</td>
+                  <td>94</td>-->
+                </tr>
+                <tr>
+                  <td><span class="num">13</span>Dustin Poirier</td>
+                  <!--<td>Johnson</td>
+                  <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">14</span>Jamahal Hill</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+                <tr>
+                    <td><span class="num">15</span>Brandon Moreno</td>
+                    <!--<td>Johnson</td>
+                    <td>67</td>-->
+                </tr>
+              </table>
+          </div>
+        </div>
+        <!-- Go To Top Button -->
+        <div class="gtp">
+          <a href="#to-the-topz"><button class="btn btn-light">Go to Top</button></a>
+      </div>
+    </body>
+</html>

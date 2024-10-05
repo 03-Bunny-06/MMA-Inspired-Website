@@ -1,0 +1,261 @@
+<html>
+    <head>
+        <title>Subscription Page</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <style>
+            .bg-sub{
+                background-color: black;
+            }
+            .pricing-head{
+                color: white;
+                font-family: Agency FB;
+                font-size: 60px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            .pricing-head-1{
+                font-family: Agency FB;
+                font-size: 60px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 40px;
+                margin-bottom: 50px;
+                color: red;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+            }
+            .pricing-boxez1{
+                height: 1050px;
+                width: 420px;
+                border: 2px solid white;
+                border-radius: 20px;
+                margin-left: 50px;
+                margin-bottom: 50px;
+                /*margin-top: 140px;*/
+            }
+            .pricing-boxez2{
+                height: 1050px;
+                width: 420px;
+                border: 2px solid white;
+                border-radius: 20px;
+                margin-left: 40px;
+                margin-bottom: 50px;
+                /*margin-top: 140px;*/
+            }
+            .pricing-boxez3{
+                height: 1050px;
+                width: 420px;
+                border: 2px solid white;
+                border-radius: 20px;
+                margin-left: 40px;
+                margin-bottom: 40px;
+                /*margin-top: 140px;*/
+                margin-right: 50px;
+            }
+            .main-head-font{
+                text-align: center;
+                font-family: Agency FB;
+                font-weight: bolder;
+                font-size: 32px;
+                color: aqua;
+            }
+            .f1:hover{
+                color: #CD7F32;
+                cursor: pointer;
+            }
+            .f2:hover{
+                color: silver;
+                cursor: pointer;
+            }
+            .f3:hover{
+                color: gold;
+                cursor: pointer;
+            }
+            .im-style{
+                height: 350px;
+                width: 350px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+            }
+            .main-price{
+                color: white;
+                font-family: "Roboto";
+                font-size: 50px;
+                font-weight: bolder;
+                /*padding-top: 25px;
+                /*padding-bottom: 25px;*/
+            }
+            .mon-price{
+                color: white;
+                font-family: "Roboto";
+                font-size: 28px;
+                font-weight: bolder;
+                /*font-style: italic;*/
+            }
+            .plan-description{
+                color: white;
+                font-family: "Roboto";
+                font-weight: lighter;
+                font-style: italic;
+                font-size: 20px;
+            }
+            .perks-with-plans{
+                color: white;
+                font-family: Agency FB;
+                font-size: 26px;
+                font-weight: 700;
+                font-style: italic;
+            }
+            .perks-layout{
+                display: flex;
+                justify-content: start;
+            }
+            .tick-design{
+                color: white;
+                font-size: 26px;
+                padding-right: 15px;
+            }
+            .tick-design-red{
+                color: red;
+            }
+            .tick-design-green{
+                color: lightgreen;
+            }
+            /*.perks-with-plans:hover{
+                text-decoration: underline;
+            }*/
+            .subscribe-button{
+                color: white;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 30px;
+                padding-right: 30px;
+                border-radius: 30px;
+                border: 2px solid white;
+                font-size: 18px;
+                background-color: black;
+                margin: 20px;
+            }
+            .subscribe-button-position{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+            }
+            .subscribe-button:hover{
+                cursor: pointer;
+                color: black;
+                background-color: white;
+            }
+            .adjust-content{
+                display: block;
+                justify-content: center;
+                padding-left: 35px;
+                padding-right: 35px;
+                /*padding-bottom: 25px;*/
+            }
+            .two-elements{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body class="bg-sub">
+        <h1 class="pricing-head-1">Pricing <span class="pricing-head">Plans</span></h1>
+        <div class="container">
+            <!--<h1 class="pricing-head">Pricing Plans</h1>-->
+            <div>
+                <h1 class="main-head-font f1">Bronze Fighter</h1>
+                <div class="pricing-boxez1">
+                    <img src="../pricing-packs-2\1.png" class="im-style"/>
+                    <h1 class="main-price two-elements">Free !</h1>
+                    <div class="adjust-content">
+                        <h4 class="plan-description">Get started with essential access to our MMA world. Unlock basic training resources, news, and community engagement for your journey into the octagon.</h4>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-red">☒</h1>
+                            <h1 class="perks-with-plans perks-red">Rankings Visibility</h1>
+                        </div>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-red">☒</h1>
+                            <h1 class="perks-with-plans">Watch Live Events</h1>
+                        </div>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-green">🗹</h1>
+                            <h1 class="perks-with-plans">Watch Upto 10 Vidoes</h1>
+                        </div>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-green">🗹</h1>
+                            <h1 class="perks-with-plans">Upto 10% off on Merchandise</h1>
+                        </div>
+                    </div>
+                    <div class="subscribe-button-position">
+                        <button class="subscribe-button">Register Now !</button>
+                    </div>  
+                </div>
+            </div>
+            <div>
+                <h1 class="main-head-font f2">Silver Warrior</h1>
+                <div class="pricing-boxez2">
+                    <img src="../pricing-packs-2\2.png" class="im-style"/>
+                    <h1 class="main-price two-elements">₹2899 <span class="mon-price">/mon</span></h1>
+                    <div class="adjust-content">
+                        <h4 class="plan-description">Elevate your MMA experience with advanced training techniques, exclusive content, and access to premium events. Forge your path to becoming a formidable fighter in style.</h4>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-green">🗹</h1>
+                            <h1 class="perks-with-plans">Rankings Visibility</h1>
+                        </div>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-green">🗹</h1>
+                            <h1 class="perks-with-plans">Watch 5 Live Events</h1>
+                        </div>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-green">🗹</h1>
+                            <h1 class="perks-with-plans">Watch Upto 150 Vidoes</h1>
+                        </div>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-green">🗹</h1>
+                            <h1 class="perks-with-plans">Upto 25% off on Merchandise</h1>
+                        </div>
+                    </div>
+                    <div class="subscribe-button-position">
+                        <button class="subscribe-button">🜲 Get Premium</button>
+                    </div>   
+                </div>
+            </div>
+            <div>
+                <h1 class="main-head-font f3">Gold Champion</h1>
+                <div class="pricing-boxez3">
+                    <img src="../pricing-packs-2\3.png" class="im-style"/>
+                    <h1 class="main-price two-elements">₹8999 <span class="mon-price">/mon</span></h1>
+                    <div class="adjust-content">
+                        <h4 class="plan-description">Unleash your full potential as an MMA enthusiast with VIP access to top-tier training, exclusive perks, and front-row seats to legendary bouts. Become the ultimate champion in the world.</h4>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-green">🗹</h1>
+                            <h1 class="perks-with-plans">Rankings Visibility</h1>
+                        </div>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-green">🗹</h1>
+                            <h1 class="perks-with-plans">Watch 10 Live Events</h1>
+                        </div>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-green">🗹</h1>
+                            <h1 class="perks-with-plans">Watch Unlimited Vidoes</h1>
+                        </div>
+                        <div class="perks-layout">
+                            <h1 class="tick-design tick-design-green">🗹</h1>
+                            <h1 class="perks-with-plans">Upto 50% off on Merchandise</h1>
+                        </div>
+                    </div>
+                    <div class="subscribe-button-position">
+                        <button class="subscribe-button">🜲 Get Premium</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
