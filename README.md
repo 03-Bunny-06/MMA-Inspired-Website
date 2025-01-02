@@ -18,16 +18,16 @@ Features:
 **Informative Sections**
 
 * Martial Arts Styles: Highlights key martial arts disciplines such as Brazilian Jiu-Jitsu, Muay Thai, and Judo. Each style includes:
-* A brief history.
-* Core techniques and philosophies.
-* Applications in self-defense and sports.
+1. A brief history.
+2. Core techniques and philosophies.
+3. Applications in self-defense and sports.
 
 **E-Commerce Inspired Merchandise**
 
 * Showcase of merchandise items, such as punching bags, shorts, gloves, and uniforms. Each product display includes:
-* Image previews.
-* Pricing details with discounts.
-* Add-to-cart and buy-now buttons for user interaction.
+1. Image previews.
+2. Pricing details with discounts.
+3. Add-to-cart and buy-now buttons for user interaction.
 
 **Interactive UI Components**
 
