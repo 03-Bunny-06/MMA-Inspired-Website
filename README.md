@@ -65,8 +65,6 @@ Showcase of merchandise items, such as **punching bags, shorts, gloves, and unif
 - **Login System**: Access the login page for user authentication. Enter valid credentials to proceed.
 - **Contact Us**: Use the provided links to connect with us on platforms like **Facebook, Instagram, Twitter, and more**.
 
----
-
 ![image](https://github.com/user-attachments/assets/11cef6a2-c98c-4b31-90f1-d64c2844fdc5)
 
 ![image](https://github.com/user-attachments/assets/ef672383-70e9-4582-889d-4ed88a0fbfcc)
